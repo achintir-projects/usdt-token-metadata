@@ -1,0 +1,8 @@
+{
+  "name": "USDT",
+  "short_name": "USDT",
+  "start_url": "/TokenScript.xml",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
