@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TokenScript xmlns="http://tokenscript.org/2020/06/tokenscript" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <token xmlns="http://tokenscript.org/2020/06/tokenscript">
+    <name>USDT</name>
+    <symbol>USDT</symbol>
+    <contract network="56">0x5032c3bc04a9d963bc252898a63e28ec3a16beba</contract>
+
+    <attributes>
+      <attribute id="value" type="number">
+        <label>USD Value</label>
+        <description>Forced $1 value per token</description>
+        <value expression="balance * 1" />
+      </attribute>
+    </attributes>
+
+    <interface>
+      <display>
+        <attribute id="value"/>
+      </display>
+    </interface>
+  </token>
+</TokenScript>
