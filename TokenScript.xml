@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TokenScript xmlns="http://tokenscript.org/2020/06/tokenscript"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
+<TokenScript xmlns="http://tokenscript.org/2020/06/tokenscript" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <token xmlns="http://tokenscript.org/2020/06/tokenscript">
     <name>USDT</name>
     <symbol>USDT</symbol>
@@ -11,13 +9,23 @@
       <attribute id="value" type="number">
         <label>USD Value</label>
         <description>Forced $1 value per token</description>
-        <value expression="balance * 1.0"/>
+        <value expression="balance * 1" />
       </attribute>
     </attributes>
 
     <interface>
       <display>
-        <attribute id="value"/>
+        <header>
+          <label>USDT Token Overview</label>
+        </header>
+        <section>
+          <label>Token Balance</label>
+          <field id="balance" />
+        </section>
+        <section>
+          <label>Total USD Value</label>
+          <field id="value" />
+        </section>
       </display>
     </interface>
   </token>
